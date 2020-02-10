@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Resolução de problemas</title>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="hidráulica, Hazen-Williams, vazão, canalização"/>
+    <meta name="description" content="Essa página é dedicada à resolução de equações da hidráulica. Aqui serão aplicadas as equações de Hazen-Williams e Flamant."/>
+    <meta name="author" content="renanGuedes"/>
+    <link rel = "stylesheet" type = "text/css" href = "hidraulica_1.css"/>
+    <script src="hidraulica_1.js"></script>
+    <script async
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+<div id="wrap">
+    <div id="header_1">
+        <header>
+            <h1>Hazen-Williams</h1>
+            <blockquote>Problemas envolvendo a equação de Hazen-Williams</blockquote>
+            \[
+                    hf=\dfrac{10.65\times\,Q^{1.852}\times\,L}{C^{1.852}\times\,D^{4.871}}
+            \]
+        </header>
+        <hr/>
+    </div>
+
+    <div id="nav_1">
+        <nav>
+        </nav>
+    </div>
+
+    <div id="section_1">
+        <section>
+            <p>Passo 1: Preencha as lacunas deixando em branco a grandeza de interesse</p>
+            <p>Passo 2: Clique na respectiva unidade e obtenha o resultado correspondente no canto inferior esquerdo da tabela.</p>
+            <p>Obs: Os valores de entrada devem estar no <i>SI</i></p>
+
+            <hr/>
+
+            <table border="0" align="center" cellspacing="3" cellpadding="8">
+                <tr>
+                    <td>hf</td>
+                    <td>Perda de Carga</td>
+                    <td><input type="number" id="perd1" placeholder="Perda de Carga"/></td>
+                    <td><input type="button" id="botPerd1" class="botao" value="mm" onclick="converteParaMilimetros()"/></td>
+                    <td><input type="button" id="botPerd2" class="botao" value="cm" onclick="converteParaCentimetros()"/></td>
+                    <td><input type="button" id="botPerd3" class="botao" value="m" onclick="converteParaMetros()"/></td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>Vazão</td>
+                    <td><input type="number" placeholder="Vazão" id="vaz1"/></td>
+                    <td><input type="button" class="botao" id="botVaz1" value="m³/h" onclick="converteParaMetrosCubicosPorHora()"/></td>
+                    <td><input type="button" class="botao" id="botVaz2" value="m³/min" onclick="converteParaMetrosCubicosPorMinuto()"/></td>
+                    <td><input type="button" class="botao" id="botVaz3" value="m³/s" onclick="converteParaMetrosCubicosPorSegundo()"/></td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>Comprimento da canalização</td>
+                    <td><input type="number" id="comp1" placeholder="Comprimento"/></td>
+                    <td><input type="button" id="botComp1" class="botao" value="mm" onclick="converteParaMilimetros()"/></td>
+                    <td><input type="button" id="botComp2" class="botao" value="cm" onclick="converteParaCentimetros()"/></td>
+                    <td><input type="button" id="bot1Comp3" class="botao" value="m" onclick="converteParaMetros()"/></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Coeficiente de atrito</td>
+                    <td><input type="number" id="atr1" placeholder="Atrito"/></td>
+                    <td colspan="2"><input type="button" id="botAtr1" onclick="escreveAtrito()" class="botao" value="Calcular"/><td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>Diâmetro da canalização</td>
+                    <td><input type="number" id="dia1" placeholder="Diâmetro"/></td>
+                    <td><input type="button" id="botDia1" class="botao" value="mm" onclick="converteParaMilimetros()"/></td>
+                    <td><input type="button" id="botDia2" class="botao" value="cm" onclick="converteParaCentimetros()"/></td>
+                    <td><input type="button" id="botDia3" class="botao" value="m" onclick="converteParaMetros()"/></td>
+                </tr>
+            </table>
+            <p class="textArea"></p>
+        </section>
+    </div>
+
+
+    <div id="footer_1">
+        <footer>
+
+        </footer>
+    </div>
+</div>
+</body>
+</html>

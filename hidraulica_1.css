@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+h1 {
+    font-family: "Arial Black";
+    font-size: 50pt;
+    background: aqua;
+}
+
+.botao {
+    background-color:darkblue;
+    border:none;
+    padding: 3px;
+    font-family: "Arial";
+    font-size:12pt;
+    color: white;
+    box-shadow: 0 5px 0 darkgray;
+    cursor: pointer;
+    transition: box-shadow .3s ease, transform .3s ease;
+    top:-40px;
+    border-radius: 4px;
+}
+
+.botao:active {
+    box-shadow: 0 0 0 #3b6f2c, inset 0 5px 5px #3b6f2c;
+    transform: translate(0px, 5px);
+}
+
+table{
+    background: lightskyblue;
+    border-radius: 5px;
+}
+
+td{
+    font-family: "Arial";
+}
+
+input{
+    font-family: "Arial";
+    background: lightblue;
+    color: black;
+    font-size: 12pt;
+    padding: 1px;
+    border-radius: 3px;
+}
+
+#header_1{
+    background: powderblue;
+    border-radius: 10px;
+}
+
+#section_1{
+    background: steelblue;
+}
+
+#wrap{
+    background: powderblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+blockquote{
+    font-family: "Arial";
+}
+p{
+    color: white;
+    font-size: 12pt;
+    font-family: "Arial";
+    padding-left: 5px;
+    padding-top: 5px;
+    background:lightseagreen;
+}
